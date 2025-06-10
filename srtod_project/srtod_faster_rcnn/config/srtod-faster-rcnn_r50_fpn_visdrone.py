@@ -1,6 +1,6 @@
 # model settings
 custom_imports = dict(
-    imports=['srtod_project.srtod_faster_rcnn.srtod_faster','srtod_project.srtod_faster_rcnn.srtod_datapreprocessor', 'srtod_project.srtod_faster_rcnn.srtod_twostagedetector'],
+    imports=['srtod_project.srtod_faster_rcnn.srtod_fasterrcnn','srtod_project.srtod_faster_rcnn.srtod_datapreprocessor', 'srtod_project.srtod_faster_rcnn.srtod_twostagedetector'],
     allow_failed_imports=False)
 
 model = dict(

@@ -14,10 +14,10 @@ env_cfg = dict(
     dist_cfg=dict(backend='nccl'),
 )
 
-vis_backends = [dict(type='LocalVisBackend')]
+vis_backends = [dict(type='LocalVisBackend'), dict(type='TensorboardVisBackend')]
 visualizer = dict(
-    type='DetLocalVisualizer', vis_backends=vis_backends, name='visualizer', save_dir="/root/nas-public-linkdata/mmdet/public_result/vis/1/")
-log_processor = dict(type='LogProcessor', window_size=50, by_epoch=True)
+    type='DetLocalVisualizer', vis_backends=vis_backends, name='visualizer', save_dir="work_dirs/srtod-cascade-rcnn_r50_fpn_visdrone/visualization")
+log_processor = dict(type='LogProcessor', window_size=50, by_epoch=False)
 
 log_level = 'INFO'
 load_from = None

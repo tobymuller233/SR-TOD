@@ -1,6 +1,6 @@
 # dataset settings
 dataset_type = 'VisDroneDataset'
-data_root = '/root/nas-resource-linkdata/VisDrone-DET2019/'
+data_root = 'datasets/VisDrone'
 
 # Example to use different file client
 # Method 1: simply set the data root and let the file I/O module
